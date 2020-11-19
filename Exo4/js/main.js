@@ -1,4 +1,4 @@
 function alphabetize(str) {
     return str.split('').sort().join('');
 }
-document.writeln(alphabetize("Abracadabra"));
+document.writeln(alphabetize("Ordre alphabétique"));

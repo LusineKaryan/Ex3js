@@ -1,5 +1,5 @@
-function capitalize(str){
-
+/*function capitalize(str){
+    
     var strArr = str.split(" ");
     var newArr = [];
 
@@ -12,6 +12,19 @@ function capitalize(str){
 
     }
 
-    return newArr.join('all words in the string will be capitalized');
+    return newArr.join('');
 
-}
+}*/
+
+function titleCase(str) {
+  var splitStr = str.toLowerCase().split(' ');
+  for (var i = 0; i < splitStr.length; i++) {
+    if (splitStr.length[i] < splitStr.length) {
+      splitStr[i].charAt(0).toUpperCase();     
+    }
+       str = splitStr.join(' '); 
+  }
+ return str;
+ }
+ 
+ titleCase("I'm a little tea pot");
