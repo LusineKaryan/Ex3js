@@ -11,3 +11,4 @@ function longestWord(string) {
   return word;
 }
 console.log(longestWord("le plus grand mot"));
+document.write(longestWord("le plus grand mot"))
