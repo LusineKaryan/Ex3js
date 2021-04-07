@@ -3,9 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Exo6</title>
 </head>
 <body>
+    <button onclick="alert('Hello !');">Cliquez-moi !</button>
+    
+<div id="position"></div>
+<script>
+var position = document.getElementById('position');
+document.addEventListener('mousemove', function(e) {
+position.innerHTML = 'Position X : ' + e.clientX + 'px<br/>Position Y : ' + e.clientY + 'px';
+}, false);
+</script>
+
+<select id="list">
+    <option>Sélectionnez votre genre</option>
+    <option>Homme</option>
+    <option>Femme</option>
+    </select>
+    <script>
+    var list = document.getElementById('list');
+    list.addEventListener('change', function() {
+    // On affiche le contenu de l’élément <option> ciblé par la propriété selectedIndex
+    alert(list.options[list.selectedIndex].innerHTML);
+    }, true);
+    </script>
+
+   
+
+
+
+    <style type="text/css">
+#text {
+color: red;
+}
+</style>
+<span id="text">La couleur du texte est rouge.</span>
+<script>
+var text = document.getElementById('text'),
+color = getComputedStyle(text).color;
+alert(color);
+</script>
+
+<p>aaaaaaaaaaaaaaaaa</p>
+
+ 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
     <script src="js/main.js"></script>
+
+<script>
+    $('p').animate({
+color: 'red',
+fontSize : ['50px', 'linear'], // cette propriété s'animera de façon linéaire
+width : '200px' // les autres s'animeront de la façon définie ensuite : swing
+}, 'swing');
+$('p').hide('slow'); // cache le paragraphe en 600ms
+$('p').show('fast', function(){
+alert('Paragraphe affiché !');
+});
+    
+</script>
 </body>
 </html>

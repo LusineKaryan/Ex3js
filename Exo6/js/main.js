@@ -12,3 +12,18 @@ function longestWord(string) {
 }
 console.log(longestWord("le plus grand mot"));
 document.write(longestWord("le plus grand mot"))
+
+
+let family = {
+  self: 'Sébastien',
+  sister: 'Laurence',
+  brother: 'Ludovic',
+  cousin_1: 'Pauline',
+  cousin_2: 'Guillaume'
+  }
+
+let id = 'brother';
+alert(family[id]); // Affiche : « Laurence »
+
+
+

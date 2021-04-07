@@ -9,3 +9,10 @@ function Capitalize(str){
 }
   
 Capitalize("la première lettre d'un mot en majuscule");
+
+
+
+
+let number = 1;
+while (number < 10) { number++; }
+alert(number); // Affiche : « 10 »
